@@ -1,16 +1,53 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: "にゃしぃフォント改二"
+    font-family: "にゃしぃフォント改二",serif
 }
 .header{
     background-color: lightskyblue;
+    font-size:20px
 }
 .title{
     padding: 10px,0px
 }
-.main{
+body{
     background-image: url(http://www.t1500.com/cg/wall/kan_get/1_bg_blue.png);
-    padding: 40px;
-    margin: 0px
+}
+.main{
+    margin: 0px;
+    width: 100%;
+    height:100%;
+    padding-bottom: 50px;
+    padding-left: 20px
+}
+.arts{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height:50px
+}
+html,body{
+    height:100%;
+}
+.allin{
+    position: relative;
+}
+.miniti{
+    margin-bottom: 5px;
+    padding-top:10px
+}
+.result{
+    padding: 5px
+}
+.art{
+    width: 240px;
+    height: 240px
+}
+.art1{
+    width: 240px;
+    height:240px;
+    padding-bottom: 50px
+}
+.nya{
+    font-size:20px
 }

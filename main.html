@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>艦これ経験値計算機    </title>
+    <title>艦これ経験値計算機</title>
     <link rel = "stylesheet" type = "text/css" href="main.css">
     <script type="text/javascript" src = "calculator.js"></script>
 </head>
 <body>
+    <div class = allin>
     <div class = "header">
-    <h1 class = "title">艦これ経験値計算機</h1></div>
+    <h1 class = "title">艦これ経験値計算機<span class = "nya">にゃしぃ</span></h1></div>
     <div class = "main">
     <form action="form" id = "now_l" name = "lv">
-            <h3>現在のレベル</h3>
-        <input type="tel" name = "now_lv">
-    <h3>目標レベル</h3>
-        <input type="tel" name = "tar_lv">
-    <h3>次のレベルまでの経験値</h3>
-        <input type="tel" name = "rem_exp">
-        <input type="button" value="計算する" onclick="calculation();">
+        <h3 class = "miniti">現在のレベル</h3>
+            <input type="tel" name = "now_lv">
+        <h3 class = "miniti">目標レベル</h3>
+            <input type="tel" name = "tar_lv">
+        <h3 class = "miniti">次のレベルまでの経験値</h3>
+            <input type="tel" name = "rem_exp">
+            <input type="button" value="計算する" onclick="calculation();">
     </form>
-    <h2>計算結果</h2>
-<div id = "result"></div>
-<div　class = "footer"><img src="https://pbs.twimg.com/media/CFvh8QIVEAACtkd.png:small" alt="島風"></div>
-</div>
-</body>
+    <h2>計算結果</h2><p>
+        <div id = "result" class = "result">
+        </div></div>
+    </p>
+    <p>
+        <h5>TDN画像置き場なり</h5>
+        </p>
+    <div　class = "arts">
+        <img src="https://pbs.twimg.com/media/CFvh8QIVEAACtkd.png:small" alt="島風" class = "art1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeiCTl79rAytDRBmUsdzRruoSGp4MCuon5S8jj2gtIlsp6St6MA"class= "art1">
+    <div class = "arts">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhekXmiBCMGBkQOBNwLg0XjaRiDmhsBMhgfT5ZpYh_nm8CTp5wA" alt="浜風"class = "art">
+        <img src="http://livedoor.blogimg.jp/asternaru/imgs/5/6/56bb393a.jpg" alt="6駆"class = "art">
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
