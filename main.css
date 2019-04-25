@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "にゃしぃフォント改二"
+}
+.header{
+    background-color: lightskyblue;
+}
+.title{
+    padding: 10px,0px
+}
+.main{
+    background-image: url(http://www.t1500.com/cg/wall/kan_get/1_bg_blue.png);
+    padding: 40px;
+    margin: 0px
+}

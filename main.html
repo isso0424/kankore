@@ -6,23 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>艦これ経験値計算機    </title>
     <link rel = "stylesheet" type = "text/css" href="main.css">
-    <script type="text/javascript" src="./calculator.js"></script>
+    <script type="text/javascript" src = "calculator.js"></script>
 </head>
 <body>
-    <h1 class = "title">艦これ経験値計算機</h1>
-    <div>
-    <h3>現在のレベル</h3>
-    <form action="form">
+    <div class = "header">
+    <h1 class = "title">艦これ経験値計算機</h1></div>
+    <div class = "main">
+    <form action="form" id = "now_l" name = "lv">
+            <h3>現在のレベル</h3>
         <input type="tel" name = "now_lv">
-    </form>
     <h3>目標レベル</h3>
-    <form action="form">
         <input type="tel" name = "tar_lv">
-    </form>
     <h3>次のレベルまでの経験値</h3>
-    <form action="form">
         <input type="tel" name = "rem_exp">
         <input type="button" value="計算する" onclick="calculation();">
-    </form></div>
+    </form>
+    <h2>計算結果</h2>
+<div id = "result"></div>
+<div　class = "footer"><img src="https://pbs.twimg.com/media/CFvh8QIVEAACtkd.png:small" alt="島風"></div>
+</div>
 </body>
 </html>
