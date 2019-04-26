@@ -29,25 +29,29 @@ body{
 html,body{
     height:100%;
 }
-.allin{
-    position: relative;
-}
 .miniti{
     margin-bottom: 5px;
     padding-top:10px
+}
+.allin{
+    position: relative;
 }
 .result{
     padding: 5px
 }
 .art{
-    width: 240px;
-    height: 240px
+    width: 220px;
+    height: 220px
 }
 .art1{
-    width: 240px;
-    height:240px;
+    width: 220px;
+    height:220px;
     padding-bottom: 50px
 }
 .nya{
     font-size:20px
+}
+.stage_list{
+    display: inline;
+    list-style: none
 }

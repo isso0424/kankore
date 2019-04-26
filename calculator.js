@@ -144,7 +144,60 @@ function calculation() {
     }
     alt_xp += Number(rem_exp)
     ex = alt_xp - all_xp
-    String(ex)
-    var hi = document.getElementById("result")
-    hi.innerText = "目標レベルまで　あと" + ex + "　経験値";
+    var stage = form.stage.value
+    var mvp = form.MVP.checked
+    var reader = form.reader.checked
+    var s = form.s.checked
+    String(s)
+    String(mvp)
+    String(reader)
+    String(stage)
+    var stage_ex
+    if (stage == "1-5") {
+        stage_ex = 457
+    }
+    if (stage == "5-2") {
+        stage_ex = 150
+    }
+    if (stage == "3-2") {
+        stage_ex = 170
+    }
+    if (stage == "2-2") {
+        stage_ex = 172
+    }
+    if (mvp == true) {
+        stage_ex *= 2
+    }
+    if (reader == true) {
+        stage_ex *= 1.5
+    }
+    if (s == true) {
+        stage_ex *= 1.2
+    }
+    count = Math.ceil(ex / stage_ex)
+    String(count)
+    var err
+    if (ex >= 0) {
+        String(ex)
+        var hi = document.getElementById("result")
+        hi.innerText = "目標レベルまで　あと" + ex + "　経験値";
+    } else if(ex < 0){
+        var hi = document.getElementById("result")
+        hi.innerText = "レベルは下げることができません"
+        err = 0
+    } else {
+        var hi = document.getElementById("result")
+        hi.innerText = "何らかのエラーにより計算できませんでした"
+        err = 0
+    }
+    if (err == 0) {
+        var an = document.getElementById("stage_count")
+        an.innerText = ""
+    }else if (stage == "1-5" || stage == "2-2" || stage == "3-2" || stage == "5-2") {
+        var an = document.getElementById("stage_count")
+        an.innerText = stage + "を 約" + count + "週"
+    } else {
+        var an = document.getElementById("stage_count")
+        an.innerText = "ステージが指定されていません"
+    }
 }

@@ -18,13 +18,27 @@
             <input type="tel" name = "now_lv">
         <h3 class = "miniti">目標レベル</h3>
             <input type="tel" name = "tar_lv">
+            <h4>周回するステージ</h4>
+            <ul>
+                <li class = "stage_list"><a><input type="radio" name = "stage" value = "1-5">1-5</a></li>
+                <li class = "stage_list"><a><input type="radio" name = "stage" value="2-2">2-2</a></li>
+                <li class = "stage_list"><a><input type="radio" name="stage" value = "3-2">3-2</a></li>
+                <li class = "stage_list"><a><input type="radio" name="stage" value="5-2">5-2</a></li>
+                <li></li>
+            </ul>
+            <h4>条件</h4>
+            <ul>
+                <li class = "stage_list"><a><input type="checkbox" name = "MVP" value="yes">MVP</a></li>
+                <li class = "stage_list"><a><input type="checkbox" name = "reader"value="yes">旗艦</a></li>
+                <li class = "stage_list"><a><input type="checkbox" name = "s" value="yes">s</a></li>
+            </ul>
         <h3 class = "miniti">次のレベルまでの経験値</h3>
             <input type="tel" name = "rem_exp">
             <input type="button" value="計算する" onclick="calculation();">
     </form>
     <h2>計算結果</h2><p>
         <div id = "result" class = "result">
-        </div></div>
+        </div><div id = "stage_count"></div></div>
     </p>
     <p>
         <h5>TDN画像置き場なり</h5>
