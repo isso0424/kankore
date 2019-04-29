@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,14 +16,27 @@
     <form action="form" id = "now_l" name = "lv">
         <h3 class = "miniti">現在のレベル</h3>
             <input type="tel" name = "now_lv">
-        <h3 class = "miniti">目標レベル</h3>
+        <h3 class = "miniti">目標レベル(艦の指定をする場合は不要です</h3>
             <input type="tel" name = "tar_lv">
+            <h4>レベリングする艦種の選択(改造までのレベル確認用</h4>
+            <p><select name="kin" id="kin" onchange="kink()">
+                <option value="none">選択してください</option>
+                <option value="kutiku">駆逐艦</option>
+                <option value="keijun">軽巡洋艦</option>
+                <option value="jujun">重巡洋艦</option>
+                <option value="senkan">戦艦</option>
+                <option value="keiku">軽空母</option>
+                <option value="seikuu">正規空母</option>
+                <option value="other">その他</option>
+            </select></p>
+            <p id = "kanmusu"></p>
             <h4>周回するステージ</h4>
             <ul>
                 <li class = "stage_list"><a><input type="radio" name = "stage" value = "1-5">1-5</a></li>
                 <li class = "stage_list"><a><input type="radio" name = "stage" value="2-2">2-2</a></li>
                 <li class = "stage_list"><a><input type="radio" name="stage" value = "3-2">3-2</a></li>
                 <li class = "stage_list"><a><input type="radio" name="stage" value="5-2">5-2</a></li>
+                <li class="stage_list"><a><input type="radio" name = "stage"value="7-1">7-1</a></li>
                 <li></li>
             </ul>
             <h4>条件</h4>
@@ -40,17 +53,6 @@
         <div id = "result" class = "result">
         </div><div id = "stage_count"></div></div>
     </p>
-    <p>
-        <h5>TDN画像置き場なり</h5>
-        </p>
-    <div　class = "arts">
-        <img src="https://pbs.twimg.com/media/CFvh8QIVEAACtkd.png:small" alt="島風" class = "art1">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeiCTl79rAytDRBmUsdzRruoSGp4MCuon5S8jj2gtIlsp6St6MA"class= "art1">
-    <div class = "arts">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhekXmiBCMGBkQOBNwLg0XjaRiDmhsBMhgfT5ZpYh_nm8CTp5wA" alt="浜風"class = "art">
-        <img src="http://livedoor.blogimg.jp/asternaru/imgs/5/6/56bb393a.jpg" alt="6駆"class = "art">
-                </div>
-            </div>
         </div>
     </body>
 </html>
