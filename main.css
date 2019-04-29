@@ -49,9 +49,9 @@ html,body{
     padding-bottom: 50px
 }
 .nya{
-    font-size:20px
+    font-size:15px
 }
-.stage_list{
+li{
     display: inline;
     list-style: none
 }

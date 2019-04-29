@@ -10,7 +10,7 @@ function calculation() {
         if (kanmusu == "asa") {
             tar_lv = 85
         }
-        if (kanmusu == "kagero" || kanmusu == "muraku" ||kanmusu == "akatuki" || kanmusu == "murasame"|| kanmusu == "tama") {
+        if (kanmusu == "kagero" || kanmusu == "muraku" ||kanmusu == "akatuki" || kanmusu == "murasame"|| kanmusu == "tama"||kanmusu == "hubuki"||kanmusu == 'ayanami'||kanmusu == "bep"||kanmusu == "hatusimo"||kanmusu == "rebe"|kanmusu == "max") {
             tar_lv = 70
         }
         if (kanmusu == "mutuki" || kanmusu == "kisa" || kanmusu == "hatuharu" || kanmusu == "oosio" || kanmusu == "nati" ||kanmusu == "asigara"||kanmusu == "haguro") {
@@ -22,7 +22,7 @@ function calculation() {
         if (kanmusu == "humi" || kanmusu == "siratuyu" || kanmusu == "mitisio"||kanmusu == "yura") {
             tar_lv = 77
         }
-        if (kanmusu == "yuugumo"||kanmusu == "kinu"||kanmusu =="hie"||kanmusu == "RJ") {
+        if (kanmusu == "yuugumo"||kanmusu == "kinu"||kanmusu =="hie"||kanmusu == "RJ"||kanmusu == "satuki"||kanmusu == "kawakaze"||kanmusu == "naganami"||kanmusu == "makigumo"||kanmusu == "kazagumo") {
             tar_lv = 75
         }
         if (kanmusu == "kasumi"||kanmusu == "suzuya"||kanmusu == "kumano"||kanmusu == "nagato"||kanmusu =="ise") {
@@ -31,12 +31,12 @@ function calculation() {
         if (kanmusu == "tenryu") {
             tar_lv =84
         }
-        if (kanmusu == "tatuta"||kanmusu == "huso"||kanmusu == "yamasiro") {
+        if (kanmusu == "tatuta"||kanmusu == "huso"||kanmusu == "yamasiro"||kanmusu == "suzuyakai" || kanmusu == "kumanokai") {
             tar_lv = 80
         }
-        if (kanmusu == "zintu")
+        if (kanmusu == "zintu"||kanmusu == "usio"||kanmusu == "sigure")
             tar_lv = 60
-        if (kanmusu == "kinugasa") {
+        if (kanmusu == "kinugasa"||kanmusu=="yuudati") {
             tar_lv =55
         }
         if (kanmusu == "mutu") {
@@ -47,6 +47,15 @@ function calculation() {
         }
         if (kanmusu == "tiyoda") {
             tar_lv =50
+        }
+        if (kanmusu == "kurosio") {
+            tar_lv = 73
+        }
+        if (kanmusu == "arare") {
+            tar_lv = 63
+        }
+        if (kanmusu == "arasio") {
+            tar_lv = 65
         }
     }
     Number(now_lv)
@@ -259,22 +268,22 @@ function kink(){
     kin = form.kin.value
     var kia = document.getElementById("kanmusu")
     if (kin == 'kutiku'){
-        kia.innerHTML = "<h5>目標艦娘選択</h5><select name = 'kanmusu'><option value='asa'>朝潮改二(lv.85)</option><option value = 'kagero'>陽炎(lv.70)</option><option value='nuinui'>不知火改二(lv.72)</option><option value='muraku'>叢雲改二(lv.70)</option><option value='mutuki'>睦月改二(lv.65)</option><option value='kisa'>如月改二(lv.65)</option><option value='humi'>文月(lv.77)</option><option value='akatuki'>暁改二(lv.70)</option><option value='hatuharu'>初春改二(lv.65)</option><option value='siratuyu'>白露改二(lv.77)</option><option value='murasame'>村雨改二(lv.70)</option><option value='oosio'>大潮改二(lv.65)</option><option value='kasumi'>霞改二(lv.88)</option><option value='mitisio'>満潮改二(lv.77)</option><option value='yuugumo'>夕雲改二(lv.75)</option></select> "
+        kia.innerHTML = "<h5>目標艦娘選択</h5><select name = 'kanmusu'><option value='kasumi'>霞改二(lv.88)</option><option value='asa'>朝潮改二(lv.85)</option><option value='siratuyu'>白露改二(lv.77)</option><option value='humi'>文月(lv.77)</option><option value='mitisio'>満潮改二(lv.77)</option><option value='satuki'>皐月改二(lv.75)</option><option value='kawakaze'>江風改二(lv.75)</option><option value='yuugumo'>夕雲改二(lv.75)</option><option value='naganami'>長波改二(lv.75)</option><option value='kazagumo'>風雲改二(lv.75)</option><option value='makigumo'>巻雲改二(lv.75)</option><option value='kurosio'>黒潮改二(lv.73)</option><option value='nuinui'>不知火改二(lv.72)</option><option value = 'kagero'>陽炎(lv.70)</option><option value='hubuki'>吹雪改二(lv.70)</option><option value='muraku'>叢雲改二(lv.70)</option><option value='akatuki'>暁改二(lv.70)</option><option value='hatusimo'>初霜改二(lv.70)</option><option value='bep'>Верный(lv.70)</option><option value='murasame'>村雨改二(lv.70)</option><option value='ayanami'>綾波改二(lv.70)</option><option value='rebe'>Z1 zwei(lv.70)</option><option value='max'>Z3 zwei(lv.70)</option><option value='arasio'>荒潮改二(lv.67)</option><option value='hatuharu'>初春改二(lv.65)</option><option value='oosio'>大潮改二(lv.65)</option><option value='mutuki'>睦月改二(lv.65)</option><option value='kisa'>如月改二(lv.65)</option><option value='arare'>霰改二(lv.63)</option><option value='usio'>潮改二(lv.60)</option><option value='sigure'>時雨改二(lv.60)</option><option value='yuudati'>夕立改二(lv.55)</option></select> "
     }
     if (kin == "keijun") {
-        kia.innerHTML = '<h5>目標艦娘選択</h5><select name="kanmusu"><option value="tama">多摩改二(lv.70)</option><option value="tenryu">天龍改二(lv.84)</option><option value="tatuta">龍田改二</option><option value="kinu">鬼怒改二(lv.75)</option><option value="yura">由良改二(lv.77)</option><option value="zintu">神通改二(lv.60)</option></select>'
+        kia.innerHTML = '<h5>目標艦娘選択</h5><select name="kanmusu"><option value="tenryu">天龍改二(lv.84)</option><option value="tatuta">龍田改二(lv.80)</option><option value="yura">由良改二(lv.77)</option><option value="kinu">鬼怒改二(lv.75)</option><option value="tama">多摩改二(lv.70)</option><option value="zintu">神通改二(lv.60)</option></select>'
     }
     if (kin == "jujun") {
-        kia.innerHTML = '<h5>目標艦娘選択</h5><select name="kanmusu"><option value="nati">那智改二(lv.65)</option><option value="asigara">足柄改二(lv.65)</option><option value="haguro">羽黒改二(lv.65)</option><option value="kinugasa">衣笠改二(lv.55)</option><option value="suzuya">鈴谷改二(lv.88)</option><option value="kumano">熊野改二(lv.88)</option></select>'
+        kia.innerHTML = '<h5>目標艦娘選択</h5><select name="kanmusu"><option value="suzuyakai">鈴谷改二(lv.80)</option><option value="kumanokai">熊野改二(lv.80)</option><option value="nati">那智改二(lv.65)</option><option value="asigara">足柄改二(lv.65)</option><option value="haguro">羽黒改二(lv.65)</option><option value="kinugasa">衣笠改二(lv.55)</option></select>'
     }
     if (kin == "senkan") {
-        kia.innerHTML = '<h5>目標艦娘選択</h5><select name="kanmusu"><option value="nagato">長門改二(lv.88)</option><option value="mutu">陸奥改二(lv.89)</option><option value="hie">比叡改二(lv.75)</option><option value="huso">扶桑改二(lv.80)</option><option value="yamasiro">山城改二(lv.80)</option><option value="ise">伊勢改二(lv.88)</option><option value="hyuga">日向改二(lv.90)</option></select>'
+        kia.innerHTML = '<h5>目標艦娘選択</h5><select name="kanmusu"><option value="hyuga">日向改二(lv.90)</option><option value="mutu">陸奥改二(lv.89)</option><option value="nagato">長門改二(lv.88)</option><option value="ise">伊勢改二(lv.88)</option><option value="huso">扶桑改二(lv.80)</option><option value="yamasiro">山城改二(lv.80)</option><option value="hie">比叡改二(lv.75)</option></select>'
     }
     if (kin == "keiku") {
         kia.innerHTML = '<h5>目標艦娘選択</h5><select name = "kanmusu"><option value="RJ">龍驤改二(lv.75)</option><option value="tiyoda">千代田航改二(lv.50)</option></select>'
     }
     if (kin == "seikuu") {
-        kia.innerHTML = '<h5>目標艦娘選択</h5><select name = "kanmusu"><option value="syokaku">翔鶴改二(lv.80)</option><option value="kainiko">翔鶴改二甲(lv.88)</option></select>'
+        kia.innerHTML = '<h5>目標艦娘選択</h5><select name = "kanmusu"><option value="kainiko">翔鶴改二甲(lv.88)</option><option value="syokaku">翔鶴改二(lv.80)</option></select>'
     }
     if (kin == "other") {
         kia.innerHTML = '<h5>今のとこ誰もいねえ</h5>'
